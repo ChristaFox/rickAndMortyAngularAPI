@@ -1,0 +1,18 @@
+@import 'styles-variables';
+
+@import '~bootstrap/scss/bootstrap';
+@import '~open-iconic/font/css/open-iconic-bootstrap.css';
+@import '~@swimlane/ngx-datatable/release/index.css';
+@import '~@swimlane/ngx-datatable/release/themes/material.css';
+@import '~@swimlane/ngx-datatable/release/assets/icons.css';
+
+html,
+body {
+  background-color: #282d38 !important;
+  color: #3470b5 !important;
+  margin-bottom: 100px;
+}
+a:hover {
+  color: #75b6ff !important;
+  text-decoration: none !important;
+}

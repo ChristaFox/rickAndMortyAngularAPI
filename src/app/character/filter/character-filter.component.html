@@ -1,0 +1,33 @@
+<div class="select-container input-group">
+  <div class="input-group-prepend">
+    <label class="input-group-text filter-label" for="inputGroupSelect01">Filter by:</label>
+  </div>
+  <select class="custom-select filter-select" [(ngModel)]="selectedValue">
+    <option *ngFor="let option of filterOptions" [value]="option.value">{{option.name}}</option>
+  </select>
+</div>
+
+<div class="search-container input-group">
+  <div class="by-name" *ngIf="isFilteredByName()">
+    <input type="text" class="form-control" [(ngModel)]="filterName" placeholder="Enter the name to filter" />
+    <button type="button" class="input-group-btn btn" (click)="searchByNameFilter($event)">
+      <span class="oi oi-magnifying-glass"></span>
+    </button>
+  </div>
+
+  <div *ngIf="isFilteredByStatus()">
+
+  </div>
+
+  <div *ngIf="isFilteredBySpecies()">
+
+  </div>
+
+  <div *ngIf="isFilteredByType()">
+
+  </div>
+
+  <div *ngIf="isFilteredByGender()">
+
+  </div>
+</div>

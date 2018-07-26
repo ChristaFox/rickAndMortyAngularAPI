@@ -1,0 +1,11 @@
+<section class="container" *ngIf="character">
+  <div>
+    <button type="button" class="btn btn-outline-success page-button" (click)="goBack()" [disabled]="prevPageUrl === ''">
+      <span class="oi oi-arrow-left"> Go Back</span>
+    </button>
+  </div>
+  <div class="main-info">
+    <h2>{{ character.name | uppercase }}</h2>
+    <img src="{{character.image}}" />
+  </div>
+</section>
